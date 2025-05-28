@@ -2,7 +2,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Create a Bedrock Runtime client
-client = boto3.client("bedrock-runtime", region_name="us-west-2")
+client = boto3.client("bedrock-runtime", region_name="us-east-1")
 
 # Set the model ID
 #model_id = "us.deepseek.r1-v1:0"

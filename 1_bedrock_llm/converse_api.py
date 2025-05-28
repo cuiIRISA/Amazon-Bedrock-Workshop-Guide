@@ -2,11 +2,11 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Create a Bedrock Runtime client in the AWS Region you want to use.
-client = boto3.client("bedrock-runtime", region_name="us-west-2")
+client = boto3.client("bedrock-runtime", region_name="us-east-1")
 
 # Set the model ID, e.g., DeepSeek-R1 Model.
-#model_id = "us.deepseek.r1-v1:0"
-model_id = "us.amazon.nova-pro-v1:0"
+model_id = "us.deepseek.r1-v1:0"
+#model_id = "us.amazon.nova-pro-v1:0"
 
 # Start a conversation with the user message.
 user_message = "Hi"

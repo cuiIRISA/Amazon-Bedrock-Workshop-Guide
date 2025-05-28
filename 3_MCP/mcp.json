@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "weather": {
+            "autoApprove": [
+                "get-forecast"
+            ],
+            "disabled": false,
+            "timeout": 60,
+            "command": "npx",
+            "args": [
+                "-y",
+                "@h1deya/mcp-server-weather"
+            ],
+            "transportType": "stdio"
+        }
+    }
+}

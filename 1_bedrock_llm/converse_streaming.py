@@ -273,7 +273,7 @@ messages = [
 
 
 try:
-    bedrock_client = boto3.client(service_name='bedrock-runtime')
+    bedrock_client = boto3.client("bedrock-runtime", region_name="us-east-1")
 
     stream_conversation(bedrock_client, model_id, messages)
 
